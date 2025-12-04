@@ -1,0 +1,7 @@
+# Dockerignore et gitignore sont les mêmes
+version: "3.8"
+
+services:
+  httpbin:
+    image: kennethreitz/httpbin
+    ports: "8080:80"

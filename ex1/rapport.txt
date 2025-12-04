@@ -1,0 +1,17 @@
+1. Calculer le total des ventes par vendeur : 
+ vendeur
+Alice      2339.85
+Bob         149.95
+Charlie     899.99
+Name: montant_total, dtype: float64 
+2. Calculer le total des ventes par produit : 
+ produit
+Clavier     3
+Laptop      3
+Souris     15
+Name: quantite, dtype: int64 
+3. Identifier le top 3 des ventes (montant le plus élevé) : 
+          date produit  quantite  prix_unitaire  vendeur  montant_total
+0  2024-01-15  Laptop         2         899.99    Alice        1799.98
+3  2024-01-16  Laptop         1         899.99  Charlie         899.99
+4  2024-01-17  Souris        10          29.99    Alice         299.90 
