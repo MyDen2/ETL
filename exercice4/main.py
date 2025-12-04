@@ -8,7 +8,7 @@ EUROPE_URL = f"{BASE_URL}/region/europe"
 
 european_countries = requests.get(EUROPE_URL).json()
 
-# 2. Créer un DataFrame avec : nom, capitale, population, superficie
+# 2. Créer un DataFrame avec : nom, capitale, population, superficie, langues
 
 data = []
 
@@ -32,8 +32,6 @@ df = pd.DataFrame(data)
 
 df['densite'] = df['population'] / df['superficie']
 
-print(df)
-
 # 4. Identifier les 5 pays les plus peuplés d'Europe
 
 print("# 5 pays les plus peuplés d'Europe")
@@ -51,8 +49,6 @@ print(total_population)
 print("# Pays avec la plus grande densité")
 country_with_largest_population = df.nlargest(1, "densite")
 print(country_with_largest_population)
-
-
 
 # Bonus 
 
@@ -72,11 +68,10 @@ for key, value in top_three_languages.to_dict().items():
         'Population concernée' : population
     })
 
-
 df2 = pd.DataFrame(data)
 
 # Sauvegarder les résultats dans `pays_europe.xlsx`
 
 with pd.ExcelWriter('./pays_europe.xlsx') as writer:
-    df.to_excel(writer, sheet_name='Europe', index=False)
-    df2.to_excel(writer, sheet_name='Languages', index=False)
+    df.to_excel(writer, sheet_name='Pays', index=False)
+    df2.to_excel(writer, sheet_name='Langues', index=False)

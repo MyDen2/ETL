@@ -1,0 +1,11 @@
+Nom,Température actuelle,Température ressentie,Humidité,Description
+Paris,8.64,6.53,84,ciel dégagé
+Amiens,7.36,4.47,90,couvert
+Lille,7.15,4.19,92,nuageux
+Nice,6.39,6.39,88,couvert
+Toulouse,8.99,5.58,81,nuageux
+Bordeaux,9.15,6.9,87,légère pluie
+Caen,6.12,3.17,93,nuageux
+Brest,5.98,3.68,93,brume
+Grenoble,-0.24,-0.24,87,couvert
+Dijon,4.85,2.26,100,légère pluie
