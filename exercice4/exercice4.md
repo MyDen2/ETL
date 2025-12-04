@@ -13,3 +13,8 @@
 7. Sauvegarder les résultats dans `pays_europe.xlsx`
 
 **API** : `https://restcountries.com/v3.1`
+
+Bonus  Top par langue parlée
+a partir des mêmes données, identifier les 3 langues les plus parlées en Europe (en termes de population totale des pays où elles sont langue officielle).
+créer un tableau langues_europe avec : langue, nombre de pays, population totale concernée.
+sauvegarder ce tableau dans une nouvelle feuille de pays_europe.xlsx.
